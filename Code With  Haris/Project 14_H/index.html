@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        header
+        {
+            background-color: aqua;
+            height: 100px;
+        }
+        nav ul
+        {
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+        }
+        li
+        {
+            font-size: 20px;
+    
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="first">Home</li>
+                <li id="second">Products</li>
+                <li>Contact</li>
+                <li>Help</li>
+            </ul>
+        </nav>
+    </header>
+
+    <table>
+        <thead>
+            <th>roll</th>
+            <th>serial</th>
+            <th>enroll</th>
+        </thead>
+        <tfoot></tfoot>
+    </table>
+
+
+    <script>
+        // // const prompt = require('prompt-sync')();
+        // let input = prompt('enter your age: ');
+        // let user = parseInt(input);
+        // if(user >= 18 && user <= 60)
+        // {
+        //     alert('You can drive....');
+        // }
+        // else if(user < 0)
+        // {
+        //     console.error('enter the correct age..');
+        // }
+        // else
+        // {
+        //     alert('You cannot drive...');
+        // }
+        // let c = confirm('do you want to see the prompt again?');
+        // console.log(c);
+
+
+        // document.body.querySelector('.first').style.color = 'red';
+        const element = document.body.getElementsByClassName("first");
+        element[0].style.backgroundColor = "red";
+        const element_2 = document.getElementById("second");
+        element_2.style.backgroundColor = "yellow";  
+        
+
+        
+        const myElement = document.body.getElementsByTagName('ul');
+        myElement[0].firstElementChild.style.color = 'green';
+
+        const all = document.body.getElementsByTagName('li');
+        all[0].style.backgroundColor = 'cyan';
+        all[1].style.backgroundColor = 'cyan';
+        all[2].style.backgroundColor = 'cyan';
+        all[3].style.backgroundColor = 'cyan';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
